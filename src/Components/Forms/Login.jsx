@@ -91,8 +91,8 @@ const Login = () => {
                 </div>
                 <div className="divider">Login With</div>
                 <div className="flex gap-5 justify-center pt-4">
-                    <button onClick={handleGoogleLogin}><img className="h-9 w-9 rounded-full" src="./google-icon.png" alt="google" /></button>
-                    <button onClick={handleFacebookLogin}><img className="h-9 w-9 rounded-full" src="./facebook-icon.png" alt="facebook" /></button>
+                    <button onClick={handleGoogleLogin}><img className="h-9 w-9 rounded-full" src="/public/image/google-icon.png" alt="google" /></button>
+                    <button onClick={handleFacebookLogin}><img className="h-9 w-9 rounded-full" src="/public/image/facebook-icon.png" alt="facebook" /></button>
                     {/* <button onClick={handleTwitterLogin}><img className="h-9 w-9 rounded-full" src="./twitter-icon.png" alt="twitter" /></button> */}
                 </div>
             </div>
