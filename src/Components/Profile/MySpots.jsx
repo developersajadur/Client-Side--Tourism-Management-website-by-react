@@ -4,6 +4,7 @@ import { Link, NavLink } from "react-router-dom";
 import { FaPen } from "react-icons/fa6";
 import { MdDelete } from "react-icons/md";
 import { FiEye } from "react-icons/fi";
+import Swal from "sweetalert2";
 
 const MySpots = () => {
     const { user } = useContext(AuthContext);
@@ -17,7 +18,40 @@ const MySpots = () => {
 
     const handleDelete = (id) => {
         console.log(id);
-       
+        Swal.fire({
+            title: "Are you sure?",
+            text: "You won't be able to revert this!",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#3085d6",
+            cancelButtonColor: "#d33",
+            confirmButtonText: "Yes, delete it!"
+        }).then((result) => {
+            if (result.isConfirmed) {
+                fetch(`http://localhost:4000/spots/${id}` , {
+                    method: "DELETE"
+                })
+                    .then(res => res.json())
+                    .then(result => {
+                        if (result.deletedCount > 0) {
+                            Swal.fire({
+                                title: "Deleted!",
+                                text: "Your file has been deleted.",
+                                icon: "success"
+                            });
+                            setMySpots(mySpots.filter(spot => spot._id !== id));
+                        }
+                    })
+                    .catch(error => {
+                        console.error("Error deleting spot:", error);
+                        Swal.fire({
+                            title: "Error!",
+                            text: "An error occurred while deleting the spot.",
+                            icon: "error"
+                        });
+                    });
+            }
+        });
     };
 
     return (

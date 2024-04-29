@@ -2,8 +2,9 @@ import { Link } from "react-router-dom";
 
 
 const Tours = ({spot}) => {
-    return (
-        <Link>
+
+return (
+        <Link to={`/spot-details/${spot._id}`}>
             <div className="card w-80 border">
   <figure><img className="h-52 " src={spot.image} alt="spot img" /></figure>
   <div className=" px-5 py-8">

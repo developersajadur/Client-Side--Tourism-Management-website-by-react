@@ -44,13 +44,9 @@ const TouristsSpots = ({spots}) => {
         {
              Array.isArray(spots) && spots?.map(spot =>
                 <SwiperSlide
-                key={spot._id}
-                >
-
-                    <Tours
-                    spot={spot}
-                    ></Tours>
-
+                key={spot._id}>
+                <Tours
+                    spot={spot}></Tours>
                 </SwiperSlide>
             )
         }
