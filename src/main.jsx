@@ -50,8 +50,9 @@ const router = createBrowserRouter([
         element: <MySpots></MySpots>
       },
       {
-        path: "/tour-details",
-        element: <TourDetails></TourDetails>
+        path: "/spot-details/:id",
+        element: <TourDetails></TourDetails>,
+        loader: ({params}) => fetch(`http://localhost:5173/spot-details/${params.id}`)
       }
     ]
   },
