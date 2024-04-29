@@ -14,6 +14,7 @@ import Login from './Components/Forms/Login';
 import AddProduct from './Components/Forms/AddProduct';
 import MySpots from './Components/Profile/MySpots';
 import UpdateProduct from './Components/Forms/UpdateProduct';
+import TourDetails from './Components/Pages/ToursRoutes/TourDetails';
 
 
 const router = createBrowserRouter([
@@ -47,6 +48,10 @@ const router = createBrowserRouter([
       {
         path: "/my-spots",
         element: <MySpots></MySpots>
+      },
+      {
+        path: "/tour-details",
+        element: <TourDetails></TourDetails>
       }
     ]
   },
