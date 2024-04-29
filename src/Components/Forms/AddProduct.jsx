@@ -1,24 +1,33 @@
 import { useContext } from "react";
-import { useForm } from "react-hook-form"
+import { useForm } from "react-hook-form";
 import { AuthContext } from "../../Providers/AuthProvider";
-const AddProduct = () => {
-    const {user} = useContext(AuthContext)
-    const { register, handleSubmit, formState: { errors }  } = useForm();
 
-    const onSubmit = (newSpot , user) => {
-        console.log(newSpot);
-        fetch("http://localhost:4000/spots" , {
-            method:"POST",
+const AddProduct = () => {
+    const { user } = useContext(AuthContext);
+    const email = user?.email;
+    const { register, handleSubmit } = useForm();
+
+    const onSubmit = (newSpot) => {
+        const dataToSend = { ...newSpot, email }; 
+        console.log(dataToSend);
+
+        fetch("http://localhost:4000/spots", {
+            method: "POST",
             headers: {
-                "content-type" : "application/json"
+                "Content-Type": "application/json"
             },
-            body: JSON.stringify(newSpot)
+            body: JSON.stringify(dataToSend)
         })
         .then(res => res.json())
-        .then(result =>
-            
-             console.log(result))
-    }
+        .then(result => {
+            console.log(result);
+            // Handle success or display a message to the user
+        })
+        .catch(error => {
+            console.error('Error sending data to server:', error);
+            // Handle error or display an error message to the user
+        });
+    };
     return (
         <div className="h-full w-full flex flex-col justify-center items-center px-2 lg:px-10 py-20"  style={{backgroundImage: 'url(https://i.postimg.cc/fyGBNjF8/11.png)'}}>
         <div className="h-full w-full flex flex-col justify-center items-center py-10 bg-[#F4F3F0]">

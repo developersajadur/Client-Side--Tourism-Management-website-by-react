@@ -55,7 +55,7 @@ const Navbar = () => {
             <span className="badge">New</span>
             </NavLink>
         </li>
-        <li><NavLink to="my-Rooms">My Rooms</NavLink></li>
+        <li><NavLink to="/my-spots">My Spots</NavLink></li>
         <li><button onClick={handleLogOut}>Log Out</button></li>
       </ul>
     </div>

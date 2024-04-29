@@ -24,7 +24,6 @@ const AuthProvider = ({ children }) => {
 
     if (!passwordRegex.test(password)) {
       toast.success('Week password')
-
       return;
   }
 

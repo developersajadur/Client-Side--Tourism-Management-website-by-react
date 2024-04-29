@@ -12,6 +12,8 @@ import ErrorPage from './Components/Pages/ErrorPage';
 import AuthProvider from './Providers/AuthProvider';
 import Login from './Components/Forms/Login';
 import AddProduct from './Components/Forms/AddProduct';
+import MySpots from './Components/Profile/MySpots';
+import UpdateProduct from './Components/Forms/UpdateProduct';
 
 
 const router = createBrowserRouter([
@@ -34,8 +36,17 @@ const router = createBrowserRouter([
         element:<Login></Login>
       },
       {
-        path: "/add-product",
+        path: "/add-spots",
         element:<AddProduct></AddProduct>
+      },
+      {
+        path: "/update-spots/:id",
+        element:<UpdateProduct></UpdateProduct>,
+        loader: ({params}) => fetch(`http://localhost:4000/spots/${params.id}`)
+      },
+      {
+        path: "/my-spots",
+        element: <MySpots></MySpots>
       }
     ]
   },
