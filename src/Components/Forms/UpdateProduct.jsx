@@ -6,7 +6,7 @@ const UpdateProduct = () => {
     const { register, handleSubmit } = useForm();
     const spot = useLoaderData();
     const onSubmit = (updateSpot) => {
-        fetch(`http://localhost:4000/spots/${spot._id}` , {
+        fetch(`https://server-side-nine-theta.vercel.app/spots/${spot._id}` , {
             method: "PUT",
             headers: {
                 "Content-Type": "application/json"

@@ -10,7 +10,7 @@ import { useEffect, useState } from 'react';
   const Slider = () => {
     const [countrys , setCountrys] = useState([])
     useEffect(() => {
-      fetch("http://localhost:4000/countrys")
+      fetch("https://server-side-nine-theta.vercel.app/countrys")
       .then(res => res.json())
       .then(data => setCountrys(data))
     }, [])

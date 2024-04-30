@@ -13,7 +13,7 @@ const AddProduct = () => {
         const dataToSend = { ...newSpot, email }; 
         console.log(dataToSend);
 
-        fetch("http://localhost:4000/spots", {
+        fetch("https://server-side-nine-theta.vercel.app/spots", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"

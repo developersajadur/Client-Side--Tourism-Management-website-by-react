@@ -7,7 +7,7 @@ const AddCountry = () => {
 
     const onSubmit = (newCountry) => {
         console.log(newCountry);
-        fetch("http://localhost:4000/countrys"  , {
+        fetch("https://server-side-nine-theta.vercel.app/countrys"  , {
             method: "POST",
             headers:{
                 "content-type": "application/json",

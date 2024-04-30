@@ -12,7 +12,7 @@ const TourDetails = () => {
     const { id } = useParams()
     const [ spotDetails , setSpotDetails ] = useState();
     useEffect(() => {
-        fetch(`http://localhost:4000/spotDetails/${id}`)
+        fetch(`https://server-side-nine-theta.vercel.app/spotDetails/${id}`)
         .then(res => res.json())
         .then(data => setSpotDetails(data))
     },[id])

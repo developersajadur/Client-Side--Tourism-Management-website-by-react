@@ -2,6 +2,8 @@ import { Link, NavLink } from "react-router-dom";
 import "../../style.css";
 import { useContext } from "react";
 import { AuthContext } from "../Providers/AuthProvider";
+import { Tooltip } from "react-tooltip";
+import 'react-tooltip/dist/react-tooltip.css';
 
 
 const Navbar = () => {
@@ -43,10 +45,12 @@ const Navbar = () => {
       <Link to="/login"><button className="btn bg-[#E7A500]">Sign In</button></Link>
     ) : (
       <div className="dropdown dropdown-end">
-      <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
-        <div className="border-2 border-[#E7A500] text-black w-28 rounded-full">
+      <div data-for="profile-tip" data-tip="hello" tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
+        <div  className="border-2 border-[#E7A500] text-black w-28 rounded-full">
           <img className="" src={user?.photoURL || "/user-img.png"} />
         </div>
+
+<Tooltip id="profile-tip" />
       </div>
       <ul id="navLg" tabIndex={0} className=" mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52">
       <li><a className="font-bold"> {user?.displayName || user?.email || "User Name Not Found"}</a></li>

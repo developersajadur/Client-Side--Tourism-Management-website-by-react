@@ -35,7 +35,7 @@ const router = createBrowserRouter([
       {
         path: "/",
         element:<Home></Home>,
-        loader: () => fetch("http://localhost:4000/spots")
+        loader: () => fetch("https://server-side-nine-theta.vercel.app/spots")
       },
       {
         path: "/register",
@@ -56,7 +56,7 @@ const router = createBrowserRouter([
         element:<PrivateRoute>
           <UpdateProduct></UpdateProduct>
         </PrivateRoute>,
-        loader: ({params}) => fetch(`http://localhost:4000/spots/${params.id}`)
+        loader: ({params}) => fetch(`https://server-side-nine-theta.vercel.app/${params.id}`)
       },
       {
         path: "/my-spots",
@@ -69,17 +69,17 @@ const router = createBrowserRouter([
         element: <PrivateRoute>
           <TourDetails></TourDetails>
         </PrivateRoute>,
-        loader: ({params}) => fetch(`http://localhost:5173/spot-details/${params.id}`)
+        loader: ({params}) => fetch(`https://server-side-nine-theta.vercel.app/${params.id}`)
       },
       {
         path: "/spots",
         element: <Spots></Spots>,
-        loader: () => fetch("http://localhost:4000/spots")
+        loader: () => fetch("https://server-side-nine-theta.vercel.app/spots")
       },
       {
         path: "/countrys",
         element: <Countrys></Countrys>,
-        loader:() => fetch("http://localhost:4000/countrys")
+        loader:() => fetch("https://server-side-nine-theta.vercel.app/countrys")
       },
       {
         path: "/add-country",
@@ -90,7 +90,7 @@ const router = createBrowserRouter([
       {
         path: "/countrys/:countryName",
         element:<CountrysSports></CountrysSports>,
-        loader:({params}) => fetch(`http://localhost:4000/countrys/${params.countryName}`)
+        loader:({params}) => fetch(`https://server-side-nine-theta.vercel.app/${params.countryName}`)
       },
       {
         path:"/contact",
