@@ -1,4 +1,6 @@
+import { Helmet } from "react-helmet";
 import { useForm } from "react-hook-form";
+import toast from "react-hot-toast";
 import { useLoaderData } from "react-router-dom";
 const UpdateProduct = () => {
     const { register, handleSubmit } = useForm();
@@ -11,9 +13,20 @@ const UpdateProduct = () => {
             },
             body: JSON.stringify(updateSpot)
         })
+        .then(res => res.json())
+        .then(data => {
+            if (data.modifiedCount > 0) {
+                toast.success('Spot updated successfully');
+            }
+        })
     }
     return (
         <div className="h-full w-full flex flex-col justify-center items-center px-2 lg:px-10 py-20"  style={{backgroundImage: 'url(https://i.postimg.cc/fyGBNjF8/11.png)'}}>
+              <Helmet>
+                <title>
+                 update Your Profile
+                </title>
+            </Helmet>
         <div className="h-full w-full rounded-2xl flex flex-col justify-center items-center py-10 bg-[#F4F3F0]">
            <div className=" flex flex-col justify-center text-center gap-2 mb-5">
            <h1 className="text-3xl font-bold">Update Tourism spots</h1>

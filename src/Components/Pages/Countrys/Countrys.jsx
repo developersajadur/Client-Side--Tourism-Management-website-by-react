@@ -1,5 +1,6 @@
 import { useLoaderData } from "react-router-dom";
 import Country from "./Country";
+import { Helmet } from "react-helmet";
 
 
 
@@ -7,6 +8,11 @@ const Countrys = () => {
     const countrys = useLoaderData()
     return (
         <div className="px-2 lg:px-10">
+              <Helmet>
+                <title>
+                  Explore Our All Country
+                </title>
+            </Helmet>
               <div className="w-full text-center py-5 rounded-xl bg-[#1313130D] mt-10 mb-10">
             <h1 className="text-4xl font-bold">Our Recommended country</h1>
         </div>

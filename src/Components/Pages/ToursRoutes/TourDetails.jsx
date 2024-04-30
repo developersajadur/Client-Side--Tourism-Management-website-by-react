@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Helmet } from "react-helmet";
 import { FaEye, FaLocationDot } from "react-icons/fa6";
 import { IoTime } from "react-icons/io5";
 import { useParams } from "react-router-dom";
@@ -20,7 +21,12 @@ const TourDetails = () => {
     
 
     return (
-        <div className="px-2 lg:px-10 ">       
+        <div className="px-2 lg:px-10 ">  
+          <Helmet>
+                <title>
+                   {spotDetails?.tourists_spot_name}
+                </title>
+            </Helmet>     
             <div className="w-full text-center py-5 rounded-xl bg-[#1313130D] mt-10 mb-10">
             <h1 className="text-4xl font-bold">You Are Almost Done !</h1>
         </div>

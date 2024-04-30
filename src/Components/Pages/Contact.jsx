@@ -1,5 +1,5 @@
 
-// import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet';
 import Swal from 'sweetalert2';
 
 
@@ -33,11 +33,11 @@ Swal.fire({
     return (
         <div className='mt-10 px-1 lg:px-10'>
 
-          {/* <Helmet>
+          <Helmet>
             <title>
               Contact Us With Your Company
             </title>
-          </Helmet> */}
+          </Helmet>
 
 <div className="w-full text-center py-5 rounded-xl bg-[#1313130D] mt-10 mb-5">
             <h1 className="text-4xl font-bold">Get In Touch</h1>
