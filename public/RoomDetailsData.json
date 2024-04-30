@@ -1,0 +1,133 @@
+[
+  {
+      "id": 1,
+      "estate_title": "Single-family homes",
+      "segment_name": "Villa",
+      "description": "Experience ultimate luxury and comfort in our beachfront villa with breathtaking ocean views.",
+      "big_description": "Experience ultimate luxury and comfort in our beachfront villa with breathtaking ocean views. This exquisite villa offers an unparalleled retreat with its spacious layout and elegant design. Step into a world of tranquility as you immerse yourself in the serene ambiance of coastal living. With 5000 square feet of meticulously crafted living space, this villa boasts seamless indoor-outdoor flow, perfect for entertaining or simply unwinding in style. Wake up to the sound of waves crashing against the shore and savor morning coffee on your private terrace overlooking the glistening waters. Indulge in leisurely days lounging by the pool or strolling along the pristine sands of your own private beach. Every detail has been thoughtfully curated to ensure a truly unforgettable stay, where luxury meets coastal charm.",
+      "price": "$5000 per night",
+      "status": "Rent",
+      "area": "5000 sq ft",
+      "parson": 4,
+      "location": "Beachfront Paradise, Miami, Florida",
+      "facilities": ["Swimming Pool", "Private Beach Access"],
+      "image_url": "https://i.ibb.co/Kq73tXF/tidy-room-with-big-mirror.jpg"
+  },
+  {
+      "id": 2,
+      "estate_title": "townhouses",
+      "segment_name": "Chalet",
+      "description": "Escape to the serenity of the mountains in our cozy chalet nestled among the pine trees.",
+      "big_description": "Escape to the serenity of the mountains in our cozy chalet nestled among the pine trees. This charming retreat offers a perfect blend of rustic charm and modern amenities, providing an idyllic getaway for nature lovers and adventurers alike. With 2500 square feet of inviting living space, this chalet welcomes you with warmth and comfort from the moment you arrive. Gather around the crackling fireplace after a day of exploring the scenic trails, or soak your cares away in the bubbling hot tub under the starlit sky. Whether you're seeking adventure on the slopes or simply seeking solace in nature's embrace, this mountain chalet promises an unforgettable retreat.",
+      "price": "$3000 per week",
+      "status": "Rent",
+      "area": "2500 sq ft",
+      "parson": 5,
+      "location": "Mountain Retreat, Aspen, Colorado",
+      "facilities": ["Fireplace", "Hot Tub"],
+      "image_url": "https://i.ibb.co/tz0rG27/bedroom-interior.jpg"
+  },
+  {
+      "id": 3,
+      "estate_title": "City Apartment",
+      "segment_name": "Apartment",
+      "description": "Live in the heart of the city in our modern apartment with stunning city skyline views.",
+      "big_description": "Live in the heart of the city in our modern apartment with stunning city skyline views. This contemporary apartment offers urban living at its finest, combining sleek design with convenience and style. With 1200 square feet of thoughtfully designed space, this apartment provides the perfect backdrop for cosmopolitan living. Enjoy access to premium amenities including a state-of-the-art gym and a rooftop terrace offering panoramic views of the city below. Whether you're exploring the vibrant nightlife or simply soaking in the bustling energy of the city streets, this apartment serves as your stylish sanctuary in the heart of it all.",
+      "price": "$800,00 per month",
+      "status": "Sale",
+      "area": "1200 sq ft",
+      "parson": 3,
+      "location": "Downtown Metropolis, New York City, New York",
+      "facilities": ["Gym", "Rooftop Terrace"],
+      "image_url": "https://i.ibb.co/MVj6mwB/modern-studio-apartment-design-with-bedroom-living-space.jpg"
+  },
+  {
+      "id": 4,
+      "estate_title": " student housing",
+      "segment_name": "Cottage",
+      "description": "Find tranquility by the sea in our charming seaside cottage retreat.",
+      "big_description": "Find tranquility by the sea in our charming seaside cottage retreat. This picturesque cottage offers a peaceful escape from the hustle and bustle of everyday life, where you can unwind and recharge surrounded by the beauty of nature. With 1800 square feet of cozy living space, this cottage exudes coastal charm with its nautical-inspired decor and breathtaking ocean views. Spend lazy afternoons lounging on the ocean view deck or gather around the fire pit for s'mores and stories under the stars. Whether you're seeking adventure on the high seas or simply seeking solace in the sound of waves crashing against the shore, this seaside cottage offers the perfect coastal retreat.",
+      "price": "$2500 per week",
+      "status": "Rent",
+      "area": "1800 sq ft",
+      "parson": 6,
+      "location": "Coastal Haven, Cape Cod, Massachusetts",
+      "facilities": ["Ocean View Deck", "Fire Pit"],
+      "image_url": "https://i.ibb.co/RP1nbz7/3d-rendering-modern-luxury-bedroom-suite-bathroom.jpg"
+  },
+  {
+      "id": 5,
+      "estate_title": "senior living communities,",
+      "segment_name": "Farmhouse",
+      "description": "Experience the charm of rural living in our rustic countryside farmhouse.",
+      "big_description": "Experience the charm of rural living in our rustic countryside farmhouse. Nestled amidst tranquil fields and rolling hills, this farmhouse offers a peaceful retreat from the chaos of modern life. With 3000 square feet of authentic country living, this farmhouse invites you to slow down and savor the simple pleasures of rural life. Wander through lush gardens and orchards bursting with fragrant blooms, or relax on the front porch swing with a glass of sweet tea in hand. Whether you're exploring the countryside on horseback or simply enjoying a quiet evening by the fireplace, this farmhouse promises a quintessential countryside getaway.",
+      "price": "$4000 per month",
+      "status": "Rent",
+      "area": "3000 sq ft",
+      "parson": 4,
+      "location": "Tranquil Fields, Provence, France",
+      "facilities": ["Gardens", "Orchard"],
+      "image_url": "https://i.ibb.co/k8tymyw/luxury-classic-modern-bedroom-suite-hotel.jpg"
+  },
+  {
+      "id": 6,
+      "estate_title": "vacation rentals",
+      "segment_name": "Mansion",
+      "description": "Indulge in luxury living by the lake in our elegant lakeside mansion.",
+      "big_description": "Indulge in luxury living by the lake in our elegant lakeside mansion. This opulent retreat offers the ultimate in sophistication and style, with 8000 square feet of lavish living space and panoramic views of the tranquil waters. From the grand foyer to the private boat dock, every detail of this mansion exudes timeless elegance and refinement. Lounge by the infinity pool overlooking the shimmering lake, or host extravagant soirées in the spacious living areas adorned with fine furnishings and exquisite artwork. Whether you're seeking relaxation or entertainment, this lakeside mansion offers a luxurious escape from the ordinary.",
+      "price": "$10,000 per day",
+      "status": "Rale",
+      "area": "8000 sq ft",
+      "parson": 6,
+      "location": "Lakefront Haven, Geneva, Switzerland",
+      "facilities": ["Boat Dock", "Infinity Pool"],
+      "image_url": "https://i.ibb.co/pWcf8FQ/interior-modern-comfortable-hotel-room.jpg"
+  },
+{
+      "id": 7,
+      "estate_title": "Ski Chalet",
+      "segment_name": "Chalet",
+      "description": "Enjoy ski-in/ski-out convenience in our cozy mountain chalet with stunning alpine views.",
+      "big_description": "Enjoy ski-in/ski-out convenience in our cozy mountain chalet with stunning alpine views. This charming chalet offers the perfect retreat for winter sports enthusiasts, with easy access to the slopes and breathtaking views of the surrounding mountains. With 2800 square feet of inviting living space, this chalet provides a cozy haven after a day on the slopes, with warm wood accents and a crackling fireplace to welcome you home. Soothe tired muscles in the sauna or unwind in the bubbling jacuzzi as you take in the panoramic vistas from the comfort of your private retreat. Whether you're hitting the slopes or simply savoring the serene beauty of the alpine landscape, this ski chalet promises an unforgettable mountain getaway.",
+      "price": "$6000 per week",
+      "status": "Rent",
+      "area": "2800 sq ft",
+      "parson": 2,
+      "location": "Alpine Paradise, Chamonix, France",
+      "facilities": ["Sauna", "Jacuzzi"],
+      "image_url": "https://i.ibb.co/pWcf8FQ/interior-modern-comfortable-hotel-room.jpg"
+  },
+  {
+      "id": 8,
+      "estate_title": "Historic Townhouse",
+      "segment_name": "Townhouse",
+      "description": "Step back in time and live in luxury in our meticulously restored historic townhouse.",
+      "big_description": "Step back in time and live in luxury in our meticulously restored historic townhouse. This elegant townhouse offers a glimpse into the past with its rich history and timeless architecture, meticulously preserved and restored for modern-day luxury living. With 4000 square feet of gracious living space, this townhouse exudes old-world charm and sophistication, from the grand garden courtyard to the ornate fireplace mantels. Immerse yourself in the storied heritage of Charleston as you explore the cobblestone streets and historic landmarks just steps from your doorstep. Whether you're hosting elegant gatherings or simply savoring quiet moments in the garden, this historic townhouse offers a truly timeless retreat.",
+      "price": "$2,500 per day",
+      "status": "Sale",
+      "area": "4000 sq ft",
+      "parson": 5,
+      "location": "Heritage District, Charleston, South Carolina",
+      "facilities": ["Garden Courtyard", "Fireplace"],
+      "image_url": "https://i.ibb.co/3vD1YTP/contemporary-living-room.jpg"
+  },
+  {
+      "id": 9,
+      "estate_title": "Urban Loft",
+      "segment_name": "Loft",
+      "description": "Experience urban living at its finest in our spacious loft with industrial chic design.",
+      "big_description": "Experience urban living at its finest in our spacious loft with industrial chic design. This stylish loft offers a unique blend of modern design and industrial charm, with 2000 square feet of open-concept living space and soaring ceilings. Exposed brick walls and polished concrete floors create a sleek backdrop for contemporary living, while expansive windows flood the space with natural light and offer sweeping views of the downtown skyline. Entertain friends in the spacious living area or whip up culinary delights in the gourmet kitchen featuring sleek stainless steel appliances. With its prime location in the vibrant Arts District, this loft puts you at the center of it all, with galleries, restaurants, and nightlife just steps from your door.",
+      "price": "$1500 per month",
+      "status": "Rent",
+      "area": "2000 sq ft",
+      "parson": 4,
+      "location": "Downtown Arts District, Los Angeles, California",
+      "facilities": ["Open Floor Plan", "Exposed Brick Walls"],
+      "image_url": "https://i.ibb.co/4SFkWL4/tidy-hotel-room-with-brown-curtains.jpg"
+  }
+]
+
+
+
+
+

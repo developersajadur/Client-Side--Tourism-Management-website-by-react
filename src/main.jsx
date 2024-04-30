@@ -19,6 +19,9 @@ import Spots from './Components/Pages/ToursRoutes/Spots';
 import AddCountry from './Components/Forms/AddCountry';
 import Countrys from './Components/Pages/Countrys/Countrys';
 import CountrysSports from './Components/Pages/Countrys/CountrysSports';
+import Contact from './Components/Pages/Contact';
+import Blogs from './Components/Pages/Blogs/Blogs';
+import BlogDetails from './Components/Pages/Blogs/BlogDetails';
 
 
 const router = createBrowserRouter([
@@ -76,6 +79,20 @@ const router = createBrowserRouter([
         path: "/countrys/:countryName",
         element:<CountrysSports></CountrysSports>,
         loader:({params}) => fetch(`http://localhost:4000/countrys/${params.countryName}`)
+      },
+      {
+        path:"/contact",
+        element: <Contact></Contact>
+      },
+      {
+        path:"/blogs",
+        element:<Blogs></Blogs>,
+        loader: () => fetch("/public/blog.json")
+      },
+      {
+        path:"/blog/:blogId",
+        element: <BlogDetails></BlogDetails>,
+        loader:() => fetch("/public/blog.json")
       }
     ]
   },
