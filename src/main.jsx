@@ -64,7 +64,8 @@ const router = createBrowserRouter([
       },
       {
         path: "/countrys",
-        element: <Countrys></Countrys>
+        element: <Countrys></Countrys>,
+        loader:() => fetch("http://localhost:4000/countrys")
       },
       {
         path: "/add-country",
