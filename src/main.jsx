@@ -15,6 +15,9 @@ import AddProduct from './Components/Forms/AddProduct';
 import MySpots from './Components/Profile/MySpots';
 import UpdateProduct from './Components/Forms/UpdateProduct';
 import TourDetails from './Components/Pages/ToursRoutes/TourDetails';
+import Spots from './Components/Pages/ToursRoutes/Spots';
+import AddCountry from './Components/Forms/AddCountry';
+import Countrys from './Components/Pages/Countrys/Countrys';
 
 
 const router = createBrowserRouter([
@@ -53,6 +56,19 @@ const router = createBrowserRouter([
         path: "/spot-details/:id",
         element: <TourDetails></TourDetails>,
         loader: ({params}) => fetch(`http://localhost:5173/spot-details/${params.id}`)
+      },
+      {
+        path: "/spots",
+        element: <Spots></Spots>,
+        loader: () => fetch("http://localhost:4000/spots")
+      },
+      {
+        path: "/countrys",
+        element: <Countrys></Countrys>
+      },
+      {
+        path: "/add-country",
+        element: <AddCountry></AddCountry>
       }
     ]
   },

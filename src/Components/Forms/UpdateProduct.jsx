@@ -14,7 +14,7 @@ const UpdateProduct = () => {
     }
     return (
         <div className="h-full w-full flex flex-col justify-center items-center px-2 lg:px-10 py-20"  style={{backgroundImage: 'url(https://i.postimg.cc/fyGBNjF8/11.png)'}}>
-        <div className="h-full w-full flex flex-col justify-center items-center py-10 bg-[#F4F3F0]">
+        <div className="h-full w-full rounded-2xl flex flex-col justify-center items-center py-10 bg-[#F4F3F0]">
            <div className=" flex flex-col justify-center text-center gap-2 mb-5">
            <h1 className="text-3xl font-bold">Update Tourism spots</h1>
             <p className="text-center">Explore diverse destinations with breathtaking landscapes and cultural landmarks. Plan your next adventure <br /> with ease and discover the beauty of tourism spots worldwide</p>

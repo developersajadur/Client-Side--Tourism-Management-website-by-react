@@ -15,8 +15,8 @@ const Navbar = () => {
 
     const navLinks = <>
     <li><NavLink to="/">Home</NavLink></li>
-    <li><NavLink to="/rooms">Room</NavLink></li>
-    <li><NavLink to="/blogs">Blog</NavLink></li>
+    <li><NavLink to="/spots">Spots</NavLink></li>
+    <li><NavLink to="/countrys">Countrys</NavLink></li>
     <li><NavLink to="/contact">Contact</NavLink></li>
     </>
     return (
@@ -56,6 +56,8 @@ const Navbar = () => {
             </NavLink>
         </li>
         <li><NavLink to="/my-spots">My Spots</NavLink></li>
+        <li><NavLink to="/add-spots">Add Spots</NavLink></li>
+        <li><NavLink to="/add-country">Add Country</NavLink></li>
         <li><button onClick={handleLogOut}>Log Out</button></li>
       </ul>
     </div>

@@ -30,7 +30,7 @@ const AddProduct = () => {
     };
     return (
         <div className="h-full w-full flex flex-col justify-center items-center px-2 lg:px-10 py-20"  style={{backgroundImage: 'url(https://i.postimg.cc/fyGBNjF8/11.png)'}}>
-        <div className="h-full w-full flex flex-col justify-center items-center py-10 bg-[#F4F3F0]">
+        <div className="h-full w-full flex flex-col rounded-2xl justify-center items-center py-10 bg-[#F4F3F0]">
            <div className=" flex flex-col justify-center text-center gap-2 mb-5">
            <h1 className="text-3xl font-bold">Add New Tourism spots</h1>
             <p className="text-center">Explore breathtaking destinations! Discover our curated selection of diverse tourism spots. <br /> From scenic landscapes to cultural landmarks, plan your next adventure with ease.</p>
