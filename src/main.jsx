@@ -18,6 +18,7 @@ import TourDetails from './Components/Pages/ToursRoutes/TourDetails';
 import Spots from './Components/Pages/ToursRoutes/Spots';
 import AddCountry from './Components/Forms/AddCountry';
 import Countrys from './Components/Pages/Countrys/Countrys';
+import CountrysSports from './Components/Pages/Countrys/CountrysSports';
 
 
 const router = createBrowserRouter([
@@ -70,6 +71,11 @@ const router = createBrowserRouter([
       {
         path: "/add-country",
         element: <AddCountry></AddCountry>
+      },
+      {
+        path: "/countrys/:countryName",
+        element:<CountrysSports></CountrysSports>,
+        loader:({params}) => fetch(`http://localhost:4000/countrys/${params.countryName}`)
       }
     ]
   },

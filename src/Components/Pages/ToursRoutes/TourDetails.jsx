@@ -10,7 +10,6 @@ const TourDetails = () => {
 
     const { id } = useParams()
     const [ spotDetails , setSpotDetails ] = useState();
-    console.log(spotDetails);
     useEffect(() => {
         fetch(`http://localhost:4000/spotDetails/${id}`)
         .then(res => res.json())

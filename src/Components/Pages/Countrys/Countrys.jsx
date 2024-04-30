@@ -5,7 +5,6 @@ import Country from "./Country";
 
 const Countrys = () => {
     const countrys = useLoaderData()
-    console.log(countrys.length);
     return (
         <div className="px-2 lg:px-10">
               <div className="w-full text-center py-5 rounded-xl bg-[#1313130D] mt-10 mb-10">
@@ -16,7 +15,7 @@ const Countrys = () => {
             {
                 countrys.map(country => 
                     <Country
-                    key={country._d}
+                    key={country._id}
                     country={country}
                     ></Country>
                 )

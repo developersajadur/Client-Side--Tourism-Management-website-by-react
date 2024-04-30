@@ -10,7 +10,7 @@ const Country = ({country}) => {
     <p className="">{country.details}</p>
   </div>
   <div className="px-5 w-full py-8 flex justify-center">
-  <Link className="btn w-full bg-[#D2B48C]">View Tourism Spots</Link>
+  <Link to={`/countrys/${country.country_Name}`} className="btn w-full bg-[#D2B48C]">View Tourism Spots</Link>
   </div>
 </div>
         </div>
