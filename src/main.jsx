@@ -22,6 +22,8 @@ import CountrysSports from './Components/Pages/Countrys/CountrysSports';
 import Contact from './Components/Pages/Contact';
 import Blogs from './Components/Pages/Blogs/Blogs';
 import BlogDetails from './Components/Pages/Blogs/BlogDetails';
+import PrivateRoute from './Components/privateRoutes/PrivateRoute';
+import Profile from './Components/Profile/Profile';
 
 
 const router = createBrowserRouter([
@@ -45,20 +47,28 @@ const router = createBrowserRouter([
       },
       {
         path: "/add-spots",
-        element:<AddProduct></AddProduct>
+        element:<PrivateRoute>
+          <AddProduct></AddProduct>
+        </PrivateRoute>
       },
       {
         path: "/update-spots/:id",
-        element:<UpdateProduct></UpdateProduct>,
+        element:<PrivateRoute>
+          <UpdateProduct></UpdateProduct>
+        </PrivateRoute>,
         loader: ({params}) => fetch(`http://localhost:4000/spots/${params.id}`)
       },
       {
         path: "/my-spots",
-        element: <MySpots></MySpots>
+        element: <PrivateRoute>
+          <MySpots></MySpots>
+        </PrivateRoute>
       },
       {
         path: "/spot-details/:id",
-        element: <TourDetails></TourDetails>,
+        element: <PrivateRoute>
+          <TourDetails></TourDetails>
+        </PrivateRoute>,
         loader: ({params}) => fetch(`http://localhost:5173/spot-details/${params.id}`)
       },
       {
@@ -73,7 +83,9 @@ const router = createBrowserRouter([
       },
       {
         path: "/add-country",
-        element: <AddCountry></AddCountry>
+        element: <PrivateRoute>
+          <AddCountry></AddCountry>
+        </PrivateRoute>
       },
       {
         path: "/countrys/:countryName",
@@ -93,6 +105,12 @@ const router = createBrowserRouter([
         path:"/blog/:blogId",
         element: <BlogDetails></BlogDetails>,
         loader:() => fetch("/public/blog.json")
+      },
+      {
+        path:"profile",
+        element:<PrivateRoute>
+          <Profile></Profile>
+        </PrivateRoute>
       }
     ]
   },
