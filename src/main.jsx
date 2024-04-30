@@ -99,12 +99,12 @@ const router = createBrowserRouter([
       {
         path:"/blogs",
         element:<Blogs></Blogs>,
-        loader: () => fetch("/public/blog.json")
+        loader: () => fetch("/blog.json")
       },
       {
         path:"/blog/:blogId",
         element: <BlogDetails></BlogDetails>,
-        loader:() => fetch("/public/blog.json")
+        loader:() => fetch("/blog.json")
       },
       {
         path:"profile",

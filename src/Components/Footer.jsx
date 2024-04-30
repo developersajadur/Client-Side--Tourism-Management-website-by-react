@@ -9,7 +9,7 @@ const Footer = () => {
             <footer className="p-10 flex flex-col bg-[#1B2132] text-xl text-white">
               <div className="flex flex-col md:flex-row lg:flex-row justify-center gap-5 md:gap-8 lg:gap-14 ">
   <aside>
-  <Link to="/"><img className="w-36" src="/public/image/logo.png" alt="logo" /></Link>
+  <Link to="/"><img className="w-36" src="/image/logo.png" alt="logo" /></Link>
     <p>discover your dream destinations with <br /> ease. Your adventure awaits</p>
     <div className="flex flex-col gap-3 mt-5 text-white">
                 <div className="flex items-center gap-3 text-base font-medium"><IoHome /> Chirirbandar, Dinajpur, Bangladesh</div>

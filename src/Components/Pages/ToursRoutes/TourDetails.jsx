@@ -24,7 +24,7 @@ const TourDetails = () => {
         <div className="px-2 lg:px-10 ">  
           <Helmet>
                 <title>
-                   {spotDetails?.tourists_spot_name}
+                   {spotDetails?.tourists_spot_name || "Not Found"}
                 </title>
             </Helmet>     
             <div className="w-full text-center py-5 rounded-xl bg-[#1313130D] mt-10 mb-10">
@@ -32,28 +32,28 @@ const TourDetails = () => {
         </div>
             <div className="flex flex-col lg:flex-row gap-8">
                 <div className=" flex flex-col gap-5 lg:w-1/2">
-                <img src={spotDetails?.image} alt="" className=" h-[60%] w-full rounded-2xl" />
+                <img src={spotDetails?.image || "Not Found"} alt="" className=" h-[60%] w-full rounded-2xl" />
                 <div className="flex flex-col gap-5 lg:flex-row w-full justify-between">
                     <div className="flex flex-col gap-5">
-                        <h1 className="text-3xl font-bold">{spotDetails?.tourists_spot_name}</h1>
+                        <h1 className="text-3xl font-bold">{spotDetails?.tourists_spot_name || "Not Found"}</h1>
                         <div className="flex flex-col lg:flex-row gap-5 items-start lg:items-center">
                             <div className="font-bold text-xl flex gap-2 items-center">
-                            <FaLocationDot /> <h5 className="">{spotDetails?.country_Name}</h5>
+                            <FaLocationDot /> <h5 className="">{spotDetails?.country_Name || "Not Found"}</h5>
                             </div>
                             <div className="font-bold text-xl flex gap-2 items-center">
-                            <IoTime /> <h5 className=""> {spotDetails?.seasonality} / Travel 2 days</h5>
+                            <IoTime /> <h5 className=""> {spotDetails?.seasonality || "Not Found"} / Travel 2 days</h5>
                             </div>
                             <div className="font-bold text-xl flex gap-2 items-center">
-                            <FaEye /> <h5 className=""> {spotDetails?.totalVisitorsPerYear}</h5>
+                            <FaEye /> <h5 className=""> {spotDetails?.totalVisitorsPerYear || "Not Found"}</h5>
                             </div>
                         </div>
                     </div>
                     <div className="">
-                    <h1 className="text-2xl font-bold">${spotDetails?.average_cost}</h1>
+                    <h1 className="text-2xl font-bold">${spotDetails?.average_cost || "Not Found"}</h1>
                     </div> 
                 </div>
                 <div className="">
-                    <p className="">{spotDetails?.details}</p>
+                    <p className="">{spotDetails?.details || "Not Found"}</p>
                 </div>
                 </div>
 

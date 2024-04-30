@@ -39,23 +39,15 @@ import { useEffect, useState } from 'react';
 {
   countrys.map(country => 
     <SwiperSlide key={country._id} className='h-60 lg:h-96 relative'> 
-     <img className='h-60 lg:h-96 absolute opacity-70 z-0' src={country.image} alt="" />
+     <img className='h-60 lg:h-96 absolute opacity-70 z-0' src={country.image || "https://i.ibb.co/qNM97pQ/people-flag-with-celebration-bangladesh-independence-day-835895-3708.jpg"} alt="" />
             <div className="absolute z-10 inset-0 flex flex-col gap-2 items-center justify-center">
-              <h1 className='text-2xl lg:text-5xl font-bold text-center text-black'>{country.country_Name}</h1>
-              <p className="lg:text-lg font-semibold text-black w-[80%] lg:w-[40%]">{country.details}</p>
-              <Link to={`/countrys/${country.country_Name}`}><button className="btn border-none bg-[#E7A500] text-black ">View Tourism Spots</button></Link>
+              <h1 className='text-2xl lg:text-5xl font-bold text-center text-black'>{country.country_Name || "Not Found"}</h1>
+              <p className="lg:text-lg font-semibold text-black w-[80%] lg:w-[40%]">{country.details || "Not Found"}</p>
+              <Link to={`/countrys/${country.country_Name || "Not Found"}`}><button className="btn border-none bg-[#E7A500] text-black ">View Tourism Spots</button></Link>
             </div>
           </SwiperSlide>
   )
 }
-{/* <SwiperSlide className='h-60 lg:h-96 relative'>
-            <img className='h-60 lg:h-96 absolute opacity-70 z-0' src="https://i.ibb.co/k8tymyw/luxury-classic-modern-bedroom-suite-hotel.jpg" alt="" />
-            <div className="absolute z-10 inset-0 flex flex-col gap-2 items-center justify-center">
-              <h1 className='text-2xl lg:text-5xl font-bold text-center text-black'>hi</h1>
-              <p className="lg:text-lg font-semibold text-black w-[80%] lg:w-[40%]">bye</p>
-              <Link to="/"><button className="btn border-none bg-[#E7A500] text-black ">Book Now</button></Link>
-            </div>
-          </SwiperSlide> */}
       </Swiper>
     </div>
     </div>

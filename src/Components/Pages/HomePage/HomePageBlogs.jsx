@@ -6,7 +6,7 @@ const HomePageBlogs = () => {
     const [blogs, setBlogs] = useState([]);
     const [seeDetails, setSeeDetails] = useState(3);
     useEffect(() => {
-        fetch("/public/blog.json") 
+        fetch("/blog.json") 
             .then(res => res.json())
             .then(data => setBlogs(data))
             .catch(error => console.error("Error fetching blogs:", error));

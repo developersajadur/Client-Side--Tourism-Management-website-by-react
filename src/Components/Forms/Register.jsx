@@ -29,9 +29,9 @@ const Register = () => {
         handleSocialLogin(googleLogin);
     };
 
-    const handleFacebookLogin = () => {
-        handleSocialLogin(facebookLogin);
-    };
+    // const handleFacebookLogin = () => {
+    //     handleSocialLogin(facebookLogin);
+    // };
 
     const handleTwitterLogin = () => {
         handleSocialLogin(twitterLogin);
@@ -94,9 +94,8 @@ const Register = () => {
                 </div>
                 <div className="divider">Register With</div>
                 <div className="flex gap-5 justify-center pt-4">
-                    <button onClick={handleGoogleLogin}><img className="h-9 w-9 rounded-full" src="./google-icon.png" alt="google" /></button>
-                    <button onClick={handleFacebookLogin}><img className="h-9 w-9 rounded-full" src="./facebook-icon.png" alt="facebook" /></button>
-                    <button onClick={handleTwitterLogin}><img className="h-9 w-9 rounded-full" src="./twitter-icon.png" alt="facebook" /></button>
+                    <button onClick={handleGoogleLogin}><img className="h-9 w-9 rounded-full" src="/image/google-icon.png" alt="google" /></button>
+                    <button onClick={handleTwitterLogin}><img className="h-9 w-9 rounded-full" src="/image/twitter-icon.png" alt="facebook" /></button>
                 </div>
             </div>
             <ToastContainer></ToastContainer>

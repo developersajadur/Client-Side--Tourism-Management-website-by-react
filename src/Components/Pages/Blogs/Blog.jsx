@@ -29,7 +29,7 @@ const Blog = ({blog}) => {
     <div className="flex gap-5 mt-2">
       <div className="avatar">
         <div className="w-14 h-14 rounded-full">
-          <img src={"/public/user-img.png"} />
+          <img src={"/user-img.png"} />
         </div>
       </div>
       <div>
