@@ -11,7 +11,7 @@ const MySpots = () => {
     const [mySpots, setMySpots] = useState([]);
 
     useEffect(() => {
-        fetch(`http://localhost:4000/my-spots/${user?.email}`)
+        fetch(`https://server-side-nine-theta.vercel.app//my-spots/${user?.email}`)
         .then(res => res.json())
         .then(result => setMySpots(result));
     }, [user]);
